@@ -17,7 +17,7 @@ public class Multilator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
+        
         
         //Asking for Info-Assistent
         System.out.println("Möchten sie den Multilator-Assistent aufrufen?");
@@ -43,7 +43,8 @@ public class Multilator {
      
        if(operation == 1 )  i.addition();
        if(operation == 2 )  i.subtraction();
-    
+       if(operation == 3 )  i.multiplication();
+       if(operation == 4 )  i.division();
     
     
     
