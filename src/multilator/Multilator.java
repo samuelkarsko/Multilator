@@ -5,6 +5,7 @@
  */
 package multilator;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -18,7 +19,7 @@ public class Multilator {
      */
     public static void main(String[] args) {
         
-        
+       
         //Asking for Info-Assistent
         System.out.println("Möchten sie den Multilator-Assistent aufrufen?");
         
@@ -45,10 +46,15 @@ public class Multilator {
        if(operation == 2 )  i.subtraction();
        if(operation == 3 )  i.multiplication();
        if(operation == 4 )  i.division();
-    
-    
-    
-    
-    }
+       if(operation == 5 )  i.additionarr();
+       if(operation == 6 )  i.subtractionarr();
+       if(operation == 7 )  i.multiplicationarr();
+       if(operation == 8 )  i.divisionarr();
+        
+        
+        //Testing enviorenment
+        
+        
+     }
     
 }
