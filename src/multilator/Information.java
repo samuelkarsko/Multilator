@@ -49,4 +49,23 @@ public class Information {
         System.out.println(x + " - "  + y + " = " + Operations.subtraction(x, y));
     }
     
+     
+      public void multiplication(){
+        System.out.println("Multiplikation: ");
+     
+        double x = parseDouble(s1.next());
+        double y = parseDouble(s1.next());
+       
+        System.out.println(x + " * "  + y + " = " + Operations.multiplication(x, y));
+    }
+      
+      
+       public void division(){
+        System.out.println("Division: ");
+     
+        double x = parseDouble(s1.next());
+        double y = parseDouble(s1.next());
+       
+        System.out.println(x + " / "  + y + " = " + Operations.division(x, y));
+    }
 }

@@ -5,6 +5,8 @@
  */
 package multilator;
 
+import com.sun.org.apache.xpath.internal.operations.Equals;
+import static java.lang.String.valueOf;
 import java.math.BigDecimal;
 
 
@@ -21,13 +23,28 @@ public class Operations {
         return(bd.doubleValue());
     }
     
+    
     public static double subtraction(double x, double y){
-        
-        BigDecimal bd = new BigDecimal(x);
-
+        BigDecimal bd = new BigDecimal(valueOf(x));      
+        bd = bd.subtract(new BigDecimal(valueOf(y)));
+     
         return(bd.doubleValue());
     }
     
     
+    public static double multiplication(double x, double y){
+        BigDecimal bd = new BigDecimal(valueOf(x));      
+        bd = bd.multiply(new BigDecimal(valueOf(y)));
+     
+        return(bd.doubleValue());
+    }
     
+    
+    public static double division(double x, double y){
+  
+        BigDecimal bd = new BigDecimal(valueOf(x));      
+        bd = bd.divide(new BigDecimal(valueOf(y)));
+     
+        return(bd.doubleValue());
+    }
 }
